@@ -18,7 +18,7 @@ const listings = require("./routes/listing.js");
 const reviews = require("./routes/review.js");
 const users = require("./routes/user.js");
 
-const port = 3000;
+const port = proces.env.PORT || 3000;
 
 const connection = mysql.createConnection( {
     host : 'localhost',
